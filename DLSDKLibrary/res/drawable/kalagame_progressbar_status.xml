@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:drawable="@drawable/kalagame_progressbar_download_style" />
+    <item android:drawable="@drawable/kalagame_progressbar_paush_style" />
+</selector>
