@@ -16,9 +16,9 @@ import android.widget.Toast;
 import com.hly.component.download.MDownloadManager;
 
 public class MainActivity extends Activity implements OnClickListener {
-	private String url1 = "http://download.rdm.ext.wsd.com/dailybuild/DownLoadArtifactServlet?jobId=6484&buildId=null&hudsonBuildId=8&artifactRealPath=bin/MSDKSample-development-2.3.1.8_48607.apk&fileName=MSDKSample-development-2.3.1.8_48607.apk&key=1416480556198";
-	private String url2 = "http://mdc.html5.qq.com/d/directdown.jsp?channel_id=21380";
-	private String url3 = "http://download.sj.qq.com/upload/connAssitantDownload/upload/MobileAssistant_1.apk";
+        private String url1 = "";
+	private String url2 = "";
+	private String url3 = "";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +54,8 @@ public class MainActivity extends Activity implements OnClickListener {
                 DownloadInfo info = new DownloadInfo(new Identify(url1, 0, 1));
                 intent.putExtra(DownloadService.KEY_IDENTIFY, info);
                 startService(intent);*/
-                String url = "http://113.17.172.24/dlied5.myapp.com/myapp/ssgame/10000145_1415340188_SSGame_Android_v1.7.0.41107.protect.apk?mkey=546f20850ddbbf41&f=a00e&p=.apk";
-                MDownloadManager.enqueueApk(MainActivity.this, url, "button1");
+                String url = ""
+		MDownloadManager.enqueueApk(MainActivity.this, url, "button1");
             }
         	else if (v.getId()== R.id.button2)
             {
